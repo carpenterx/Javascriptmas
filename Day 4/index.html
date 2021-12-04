@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scrpt.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Shopping Checklist</title>
 </head>
 
 <body>
     <h1>Christmas Shopping List</h1>
     <div class="checklist" id="checklist"></div>
+    <div class="menu-row">
+        <input id="new-item" type="text" />
+        <button onclick="AddItem()">Add</button>
+    </div>
+    <div class="menu-row">
+        <button onclick="ClearList()">Clear List</button>
+    </div>
 </body>
 
 </html>
