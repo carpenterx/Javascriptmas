@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <p id="greeting">🎄 Jingle all the way! 🔔</p>
+        <div id="current-song" class="current-song"></div>
         <div class="btn-container">
             <button class="play-btn" id="play-btn">
                 <span class="material-icons-outlined">play_arrow</span></button>
@@ -26,6 +27,23 @@
             <button class="stop-btn" id="stop-btn">
                 <span class="material-icons-outlined">stop</span></button>
             </button>
+        </div>
+    </div>
+    <div class="playlist">
+        <div class="song">
+            <button id="song-1" class="playlist-btn">
+                <span class="material-icons-outlined playlist-icon">play_arrow</span>
+            </button>
+            <span>Jingle Bells</span>
+        </div>
+        <div class="song">
+            <button id="song-2" class="playlist-btn">
+                <span class="material-icons-outlined playlist-icon">play_arrow</span>
+            </button>
+            <span>A Peaceful Winter by <a href="https://freemusicarchive.org/music/Scott_Holmes#contact-artist">Scott Holmes Music</a></span>
+        </div>
+        <div class="volume">
+            <input id="volume-slider" class="slider" type="range" value="100">
         </div>
     </div>
 </body>
