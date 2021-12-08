@@ -7,6 +7,9 @@ playBtn.addEventListener("click", play)
 pauseBtn.addEventListener("click", pause)
 stopBtn.addEventListener("click", stop)
 
+PauseAnimation()
+bell.classList.add("animate")
+
 function play() {
     audio.play()
     AnimateBell()
@@ -27,7 +30,7 @@ function stop() {
 // Task:
 // - Animate the bell so that it looks like it is ringing when the music is playing, and stops when the music is paused or stopped. 
 function AnimateBell() {
-    bell.classList.add("animate")
+    bell.style.animationPlayState = "running";
 }
 //NB: You'll need to make changes in the CSS too 😉
 
@@ -43,8 +46,8 @@ function ResumeAnimation() {
 
 function ResetAnimation() {
     bell.classList.remove("animate");
-
-    void element.offsetWidth;
-
+    void bell.offsetWidth;
     bell.classList.add("animate");
+
+    bell.style.animationPlayState = "paused";
 }
