@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Turn on the Decorations</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="house"><span id="left-decorations"></span><span>🏡</span><span id="right-decorations"></span></p>
+        <p>Choose your DECKorations:</p>
+        <div class="options">
+            <div class="options-section">
+                <label for="left-selections">Left Selections</label>
+                <input type="text" id="left-selections" value="☃️🎄🔔">
+                <div class="buttons">
+                    <button class="left-btn">☃️</button><button class="left-btn">🎄</button><button class="left-btn">🔔</button><button class="left-btn">🦌</button><button class="left-btn">🎅</button><button class="left-btn">🎁</button><button class="left-btn">❄️</button>
+                </div>
+            </div>
+
+            <div class="options-section right">
+                <label for="right-selections">Right Selections</label>
+                <input type="text" id="right-selections" value="🦌🎅🎁">
+                <div class="buttons">
+                    <button class="right-btn">☃️</button><button class="right-btn">🎄</button><button class="right-btn">🔔</button><button class="right-btn">🦌</button><button class="right-btn">🎅</button><button class="right-btn">🎁</button><button class="right-btn">❄️</button>
+                </div>
+            </div>
+        </div>
+        
+        <input type="checkbox" class="decorator" id="decorator">
+        <label for="decorator"></label>
+    </div>
+</body>
+
+</html>
