@@ -39,21 +39,22 @@ meter {
   width: 200px;
 }
 
-meter::-webkit-meter-optimum-value, meter::-webkit-meter-suboptimum-value, meter::-webkit-meter-even-less-good-value {
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value {
   transition: 1s width;
   background-image:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       transparent,
       transparent 33%,
       rgba(0, 0, 0, 0.1) 33%,
       rgba(0, 0, 0, 0.1) 66%,
-      transparent 66%
-    );
+      transparent 66%);
   background-size: 50px 25px;
 }
 
-input[type=number], label {
+input[type=number],
+label {
   padding: 2px;
   margin: 8px;
   box-sizing: border-box;
