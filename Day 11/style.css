@@ -40,8 +40,16 @@ button {
     padding: 3em;
 }
 
+.image-bg {
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    background: white;
+}
+
 img {
     height: 300px;
+    width: 200px;
 }
 
 button {
@@ -58,4 +66,34 @@ button {
 
 .material-icons-outlined {
     font-size: 30px;
+}
+
+.faded {
+    animation-play-state: paused;
+    animation-name: fader;
+    animation-duration: 1s;
+}
+
+@keyframes fader {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.3;
+    }
+}
+
+.click-zoom input[type=checkbox] {
+    display: none;
+}
+
+.click-zoom img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+    transform: scale(2);
+    cursor: zoom-out;
 }

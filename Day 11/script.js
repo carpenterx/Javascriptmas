@@ -16,15 +16,11 @@ const imgs = [{
 ]
 
 let imgNum = 0
-ShowImage()
 
 next.addEventListener("click", ShowNextImage)
 previous.addEventListener("click", ShowPrevImage)
 
-function ShowImage() {
-    img.src = imgs[imgNum].src
-    img.alt = imgs[imgNum].alt
-}
+
 // Task:
 // - Wire up the buttons to switch through the images in the imgs array. 
 function ShowNextImage() {
@@ -49,6 +45,38 @@ function GetPrevIndex() {
     if (imgNum < 0) {
         imgNum = imgs.length - 1
     }
+}
+
+function ShowImage() {
+
+    img.addEventListener("animationend", UpdateSrc)
+    img.style.animationPlayState = "running"
+
+}
+
+function UpdateSrc() {
+    img.src = imgs[imgNum].src
+    img.alt = imgs[imgNum].alt
+    img.title = imgs[imgNum].alt
+    img.removeEventListener("animationend", UpdateSrc)
+    img.addEventListener("animationend", ClearAnimation)
+    ResetAnimation(img, "faded")
+
+    img.style.animationDirection = "reverse"
+    img.style.animationPlayState = "running"
+}
+
+function ClearAnimation() {
+    ResetAnimation(img, "faded")
+
+    img.style.animationPlayState = "paused"
+    img.style.animationDirection = "normal"
+}
+
+function ResetAnimation(element, animation) {
+    element.classList.remove(animation)
+    void element.offsetWidth
+    element.classList.add(animation)
 }
 // - Make sure that the gallery works no matter how many images are added.
 // - Decide/implement what to do when you reach either end of the array - do nothing and disable buttons, loop back round to the other end, or something else?
