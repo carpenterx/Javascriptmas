@@ -18,8 +18,7 @@ function AppendGuest(guestName) {
     guestList.appendChild(guestLi)
 }
 
-function AddToGuestsList(guestName)
-{
+function AddToGuestsList(guestName) {
     AppendGuest(guestName)
     addedGuests.push(guestName)
 }
@@ -27,10 +26,8 @@ function AddToGuestsList(guestName)
 // - Add the functionality to add new guests.
 addGuestBtn.addEventListener("click", AddNewGuest)
 
-function AddNewGuest()
-{
-    if (input.value != "")
-    {
+function AddNewGuest() {
+    if (input.value != "") {
         AddToGuestsList(input.value)
     }
 }
@@ -40,8 +37,7 @@ function AddNewGuest()
 // - Add a button to remove the most recently added guests.
 removeGuestBtn.addEventListener("click", RemoveGuest)
 
-function RemoveGuest()
-{
+function RemoveGuest() {
     guestList.innerHTML = ""
     family.forEach(item => AppendGuest(item))
     addedGuests.pop()
@@ -50,11 +46,10 @@ function RemoveGuest()
 // - What about if you want to remove the evil relative?
 removeEvilBtn.addEventListener("click", RemoveEvilRelative)
 
-function RemoveEvilRelative()
-{
+function RemoveEvilRelative() {
     guestList.innerHTML = ""
     family.forEach(item => AppendGuest(item))
-    addedGuests = addedGuests.filter(function(value, index, arr){ 
+    addedGuests = addedGuests.filter(function (value, index, arr) {
         return !value.includes("Evil");
     });
     addedGuests.forEach(item => AppendGuest(item))
