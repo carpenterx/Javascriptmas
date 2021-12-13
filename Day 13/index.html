@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Christmas Dinner Calculator</title>
+</head>
+
+<body>
+    <h1>Christmas Dinner Calculator</h1>
+    <div>
+        <div>
+            <p class="result" id="result">Your ideal Christmas dinner is <span id="food">...</span></p>
+            <form>
+                <label for="num-input">How many guests are coming?</label>
+                <input id="num-input" type="number" id="guests" name="guests" min="1">
+                <div class="veggie">
+                    <input type="checkbox" id="vegetarian-input" name="vegetarian">
+                    <label for="vegetarian-input">Vegetarian?</label>
+                </div>
+                <div class="veggie">
+                    <input type="checkbox" id="allergy-input" name="allergy">
+                    <label for="allergy-input">Nut Allergy?</label>
+                </div>
+                <button id="btn" type="button">Calculate</button>
+            </form>
+        </div>
+
+        <div id="roast-turkey" class="recipe-wrapper hide">
+            <h1>Roast Turkey</h1>
+            <div>
+                <div class="recipe-subheading">Ingredients</div>
+                <div>
+                    <div>
+                        <div>
+                            <p>1 (12-14 lb.) whole turkey, neck and giblets removed</p>
+
+                            <p>Kosher salt</p>
+
+                            <p>Freshly ground black pepper</p>
+
+                            <p>1 onion, cut into wedges</p>
+
+                            <p>1 bunch thyme</p>
+
+                            <p>Small handful rosemary sprigs</p>
+
+                            <p>Small handful sage leaves</p>
+
+                            <p>1 head garlic, halved crosswise</p>
+
+                            <p>1/2 c.melted butter</p>
+
+                            <p>2 c. low-sodium chicken broth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="recipe-subheading">Directions</div>
+                <div>
+                    <div>
+                        <div>
+                            <ol>
+                                <li>Position rack to the lower third of your oven and preheat oven to 450°. Pat turkey
+                                    dry with paper towels and season the cavity generously with salt and pepper. Stuff
+                                    the cavity with onion, thyme, rosemary, sage, and garlic. Tie the legs together with
+                                    kitchen twine and tuck the wing tips under the body to prevent burning.
+                                </li>
+                                <li>Brush melted butter all over turkey then season generously with more salt and
+                                    pepper. Place turkey breast side up on a roasting rack fitted inside a large pan.
+                                    Pour chicken broth into the pan. Transfer to oven and cook for 30 minutes, then
+                                    reduce oven temperature to 350°.
+                                </li>
+                                <li>Continue roasting, basting every 30 to 45 minutes with the juices on the bottom of
+                                    the pan, untilinternalmeat temperature reaches 165° oruntil the
+                                    juices run clear when you cut between the leg and thigh, about3 to 4 hours.
+                                </li>
+                                <li>Tent cooked turkey with aluminum foil and let rest for 20 minutes before carving.
+
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>Recipe from <a
+                    href="https://www.delish.com/holiday-recipes/thanksgiving/a55338/best-oven-roast-turkey-recipe/">delish.com</a>
+            </div>
+        </div>
+
+        <div id="roast-goose" class="recipe-wrapper hide">
+            <h1>Roast Goose</h1>
+            <div>
+                <div class="recipe-subheading">Ingredients</div>
+                <div>
+                    <div>
+                        <div>
+                            <p>1 c. pitted prunes</p>
+
+                            <p>1 c. brandy</p>
+
+                            <p>7 tbsp. unsalted butter</p>
+
+                            <p>1 c. minced onion</p>
+
+                            <p>1 goose</p>
+
+                            <p>1/4 c. ruby port</p>
+
+                            <p>1 lb. fatty ground pork</p>
+
+                            <p>2 large eggs</p>
+
+                            <p>1 pinch ground allspice</p>
+
+                            <p>1 tsp. chopped thyme leaves</p>
+
+                            <p>1 clove garlic</p>
+
+                            <p>kosher salt</p>
+
+                            <p>Freshly ground pepper</p>
+
+                            <p>15 oz. chestnuts</p>
+
+                            <p>boiling water</p>
+
+                            <p>3 c. chicken stock</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="recipe-subheading">Directions</div>
+                <div>
+                    <div>
+                        <div>
+                            <ol>
+                                <li>In a small bowl, cover the prunes with the brandy and let stand for 30 minutes.
+                                    Strain and coarsely chop the prunes; reserve the prune brandy.
+                                </li>
+                                <li>In a skillet, melt 3 tablespoons of the butter. Add the onion and cook over moderate
+                                    heat, stirring, until softened, 5 minutes. Add the goose liver and cook until no
+                                    longer pink, 2 minutes. Add the port to the skillet and boil, scraping up any
+                                    browned bits, until almost evaporated, 2 minutes.
+                                </li>
+                                <li>Scrape the mixture into the bowl of a stand mixer fitted with the paddle; let cool
+                                    slightly. Add the ground pork, eggs, allspice, thyme, and garlic and season with
+                                    salt and pepper. Beat the stuffing at low speed until thoroughly combined,
+                                    frequently scraping down the side of the bowl. Stir in the chestnuts and prunes.
+                                </li>
+                                <li>Preheat the oven to 425 degrees F. Set a rack in a roasting pan. Season the goose
+                                    cavity with salt and fill with the stuffing; secure with toothpicks. Using a paring
+                                    knife, prick the skin all over. Truss the goose and set it breast side up on the
+                                    rack. Roast for 15 minutes, then reduce the oven temperature to 350 degrees F and
+                                    roast for 3 1/2 hours, until an instant-read thermometer inserted into the stuffing
+                                    registers 160 degrees F and the thigh registers 165 degrees F. Baste the breast
+                                    every 15 minutes with 1/4 cup of boiling water; transfer to a board and let rest for
+                                    15 minutes.
+                                </li>
+                                <li>Pour the pan juices into a measuring cup and skim off the fat. Return the juices to
+                                    the pan; add the reserved prune brandy and the stock. Boil the sauce, scraping up
+                                    any browned bits stuck to the bottom of the pan, until it is slightly thickened, 10
+                                    minutes. Remove from the heat and whisk in the remaining 4 tablespoons of butter.
+                                    Season the sauce with salt and pepper.
+                                </li>
+                                <li>Discard the toothpicks and string. Spoon the stuffing from the cavity into a serving
+                                    bowl. Carve the goose and serve with the stuffing and sauce.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>Recipe from <a
+                    href="https://www.delish.com/cooking/recipe-ideas/recipes/a22245/roast-goose-pork-prune-chestnut-stuffing-recipe-fw1213/">delish.com</a>
+            </div>
+        </div>
+
+        <div id="roasted-vegetables" class="recipe-wrapper hide">
+            <h1>Roasted Vegetables</h1>
+            <div>
+                <div class="recipe-subheading">Ingredients</div>
+                <div>
+                    <div>
+                        <div>
+                            <p>3/4 lb. Brussels sprouts, trimmed and halved</p>
+
+                            <p>2 large carrots, peeled and sliced into 1/2” pieces</p>
+
+                            <p>2 tbsp. extra-virgin olive oil</p>
+
+                            <p>1 tbsp. balsamic vinegar</p>
+
+                            <p>1 tsp. chopped rosemary leaves</p>
+
+                            <p>1 tsp. chopped thyme leaves</p>
+
+                            <p>Kosher salt</p>
+
+                            <p>Freshly ground black pepper</p>
+
+                            <p>1/2 c. toasted pecans</p>
+
+                            <p>1/2 c. dried cranberries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="recipe-subheading">Directions</div>
+                <div>
+                    <div>
+                        <p>For the oven</p>
+                        <div>
+                            <ol>
+                                <li>Preheat oven to 400°. Scatter vegetables on a large baking sheet. Toss with oil,
+                                    balsamic vinegar, rosemary, and thyme. Season with salt and pepper.</li>
+                                <li>Bake for 20 to 25 minutes, until the vegetable are tender, shaking the pan halfway
+                                    through.</li>
+                                <li>Before serving, toss roasted vegetables with pecans and cranberries.</li>
+                            </ol>
+                        </div>
+                        <p>For the Air Fryer</p>
+                        <div>
+                            <ol>
+                                <li>In a large bowl, toss vegetables with oil, balsamic vinegar, and herbs. Season with
+                                    salt and pepper.</li>
+                                <li>Place vegetables in basket of air fryer and cook at 400° for 10 minutes, shaking
+                                    halfway through.</li>
+                                <li>Before serving, toss roasted vegetables with pecans and cranberries.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>Recipe from <a
+                    href="https://www.delish.com/cooking/recipe-ideas/recipes/a50228/holiday-roasted-vegetables-recipe/">delish.com</a>
+            </div>
+        </div>
+
+        <div id="stuffed-peppers" class="recipe-wrapper hide">
+            <h1>Stuffed Peppers</h1>
+            <div>
+                <div class="recipe-subheading">Ingredients</div>
+                <div>
+                    <div>
+                        <div>
+                            <p>4 tbsp. extra-virgin olive oil, divided</p>
+
+                            <p>1 large yellow onion, finely chopped</p>
+
+                            <p>3 garlic cloves, minced</p>
+
+                            <p>kosher salt</p>
+
+                            <p>freshly ground black pepper</p>
+
+                            <p>2 15.5-ounce cans chickpeas, drained</p>
+
+                            <p>2 tsp. ground cumin</p>
+
+                            <p>1 tsp. ground coriander</p>
+
+                            <p>1/4 c. plus 2 tablespoons chopped curly parsley</p>
+
+                            <p>4 bell peppers, halved lengthwise, seeds and ribs discarded</p>
+
+                            <p>1/4 c. finely chopped tomatoes</p>
+
+                            <p>1/4 c. finely chopped cucumbers</p>
+
+                            <p>1/2 lemon</p>
+
+                            <p>Tahini, for serving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="recipe-subheading">Directions</div>
+                <div>
+                    <div>
+                        <div>
+                            <ol>
+                                <li>Preheat oven to 400°F.In a large skillet, heat 2 tablespoons olive oil over
+                                    medium-high heat. Add onion and garlic and season with salt and pepper. Cook,
+                                    stirring often, until softened, about 5 minutes. Transfer onion mixture to a bowl.
+                                </li>
+                                <li>Add chickpeas,cumin, coriander, 1/4 cup parsley, and 1 tablespoon olive oil to bowl;
+                                    season withsalt and pepper and toss to combine.</li>
+                                <li>Arrange bell peppers in a baking dish and fill with chickpea mixture.Roast until
+                                    peppers are tender, about 30 minutes.</li>
+                                <li>Meanwhile, tosstomatoes and cucumbers with lemon juice, remaining 2 tablespoons
+                                    parsley and 1 tablespoon olive oil.</li>
+                                <li>Serve peppers topped with tomato salad and drizzled with tahini.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>Recipe from <a
+                    href="https://www.delish.com/cooking/recipe-ideas/a37418908/vegetarian-stuffed-peppers-recipe/">delish.com</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
