@@ -59,36 +59,82 @@ input[type=checkbox]:checked+label.strikethrough span {
 
 /* Task:
   - Write the CSS to create custom checkboxes for our shopping list.*/
-input[type=checkbox]:checked+label::before {
+input[type=checkbox]:checked+label.present::before {
     content: "🎁";
 }
-/* 🕯️ */
 
-/* Stretch goals: 
-  - Add a different random check for each item. */
-  /* 🎅 Santa Claus */
-  /* 🤶 Mrs. Claus */
-  /* 🧝 Elf */
-  /* 🦌 Deer */
-  /* ❄️ Snowflake */
-  /* ⛄ Snowman Without Snow */
-  /* 🍪 Cookie */
-  /* 🔔 Bell */
-  input[type=checkbox].candles:checked+label::before {
+input[type=checkbox]:checked+label.candles::before {
     content: "🕯️";
 }
-/* 🎄 */
-input[type=checkbox].decorations:checked+label::before {
+
+input[type=checkbox]:checked+label.decorations::before {
     content: "🎄";
 }
 
-/* 🍫 */
-input[type=checkbox].chocolate:checked+label::before {
+input[type=checkbox]:checked+label.chocolate::before {
     content: "🍫";
 }
 
-/* 🧦 Socks */
-input[type=checkbox].socks:checked+label::before {
+input[type=checkbox]:checked+label.santa::before {
+    content: "🎅";
+}
+
+input[type=checkbox]:checked+label.mrs-claus::before {
+    content: "🤶";
+}
+
+input[type=checkbox]:checked+label.elf::before {
+    content: "🧝";
+}
+
+input[type=checkbox]:checked+label.deer::before {
+    content: "🦌";
+}
+
+input[type=checkbox]:checked+label.snowflake::before {
+    content: "❄️";
+}
+
+input[type=checkbox]:checked+label.snowman::before {
+    content: "⛄";
+}
+
+input[type=checkbox]:checked+label.cookies::before {
+    content: "🍪";
+}
+
+input[type=checkbox]:checked+label.bell::before {
+    content: "🔔";
+}
+
+input[type=checkbox]:checked+label.socks::before {
     content: "🧦";
 }
+
+.buttons {
+    margin-top: 16px;
+}
+
+button {
+    background-color: var(--dark-green);
+    border: none;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+}
+
+button:hover {
+    background-color: var(--dark-green);
+    color: white;
+}
+
 /* - Use JavaScript to match the custom check to the item listed, e.g. socks would have socks as the checkmark.  */
