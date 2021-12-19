@@ -11,6 +11,8 @@ presentBtn.addEventListener("click", AssignPresentChecks)
 randomBtn.addEventListener("click", AssignRandomChecks)
 matchingBtn.addEventListener("click", AssignMatchingChecks)
 
+AssignMatchingChecks()
+
 function GetRandomIndex(array) {
     return Math.floor(Math.random() * array.length)
 }
