@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>🦌 Reindeer Speedometer</title>
+</head>
+
+<body>
+    <h1>Reindeer speedometer 🦌</h1>
+    <div class="container">
+        <label for="select">Current location:</label>
+        <select id="select">
+            <!-- <option value="North Pole" disabled selected hidden>North Pole</option> -->
+            <option value="Munich">Munich</option>
+            <option value="Kiev">Kiev</option>
+            <option value="Ulaanbaatar">Ulaanbaatar</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Tijuana">Tijuana</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+        <label for="time">Journey time:</label>
+        <input type="number" id="time" name="time" min="0" value=0>
+    </div>
+    <p id="speedometer">Enter current location and journey time to discover average reindeer speed.</span></p>
+    <button id="calculate">Calculate</button>
+    <button id="average">Average Speed</button>
+</body>
+
+</html>
