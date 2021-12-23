@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Customisable Santa Sign</title>
+</head>
+
+<body>
+    <p id="sign" class="sign"></p>
+    <label for="text-input">Message to Santa:</label>
+    <input type="text" id="text-input" class="text-input" name="text" minlength="4" maxlength="30" value="Santa Stop Here!">
+    <p>Start emoji:</p>
+    <div>
+        <input type="radio" name="start" id="start-1" value="🎅" checked>
+        <label for="start-1">🎅</label>
+        <input type="radio" name="start" id="start-2" value="☃️">
+        <label for="start-2">☃️</label>
+        <input type="radio" name="start" id="start-3" value="🎄">
+        <label for="start-3">🎄</label>
+        <input type="radio" name="start" id="start-4" value="❄️">
+        <label for="start-4">❄️</label>
+    </div>
+    <p>End emoji:</p>
+    <div>
+        <input type="radio" name="end" id="end-1" value="🎅">
+        <label for="end-1">🎅</label>
+        <input type="radio" name="end" id="end-2" value="☃️" checked>
+        <label for="end-2">☃️</label>
+        <input type="radio" name="end" id="end-3" value="🎄">
+        <label for="end-3">🎄</label>
+        <input type="radio" name="end" id="end-4" value="❄️">
+        <label for="end-4">❄️</label>
+    </div>
+    <div class="color-picker">
+        <label class="color-label" for="border-color">Border color:</label>
+        <input type="color" name="border-color" id="border-color" value="#C7375F">
+    </div>
+    <div class="color-picker">
+        <label class="color-label" for="background-color">Background color:</label>
+        <input type="color" name="background-color" id="background-color" value="#F0F4F7">
+    </div>
+    <div class="color-picker">
+        <label class="color-label" for="text-color">Text color:</label>
+        <input type="color" name="text-color" id="text-color" value="#344D2F">
+    </div>
+</body>
+
+</html>
