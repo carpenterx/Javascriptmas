@@ -1,0 +1,114 @@
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+body {
+    background-color: var(--wine-red);
+    height: 100vh;
+}
+
+.container {
+    background: var(--snow);
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 3em;
+    min-width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+p {
+    font-size: 45px;
+}
+
+.radio-container {
+    width: 200px;
+    font-size: 22px;
+}
+
+.christmas {
+    font-family: 'Mountains of Christmas', cursive;
+    color: var(--dark-green);
+    background-color: var(--wine-red);
+}
+
+.snow {
+    font-family: 'Lobster Two', cursive;
+    color: var(--snow);
+    background-color: var(--snow);
+}
+
+.snow .container {
+    color: #F0F4F7;
+    background-color: var(--dark-green);
+}
+
+.switch {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-green);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "☃️";
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--wine-red);
+}
+
+input:checked+.slider:before {
+    content: "🎅";
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
